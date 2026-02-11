@@ -1,4 +1,3 @@
-import React from "react";
 import { CalendarIcon } from "../images/CalendarLogo";
 import { TodoIcon } from "../images/TodoIcon";
 import { PlusIcon } from "../images/PlusIcon";

@@ -1,5 +1,3 @@
-import React from "react";
-
 interface Props {
   dayDate: string;
   isWeekend?: boolean;
@@ -13,7 +11,6 @@ const TestCalendarElem = ({
   isWeekend,
   isToday,
   isNotCurrentMonth,
-  tasksCount,
 }: Props) => {
   const getClassName = (): {
     containerClassName: string;
