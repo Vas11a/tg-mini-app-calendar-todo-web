@@ -2,14 +2,9 @@
 
 @theme {
   /* === Primary (Peach) === */
-  --color-primary: #F4A261;
-  --color-primary-80:  #F6B27A;
-  --color-primary-60:  #F8C59A;
-  --color-primary-40:  #FAD8BB;
-  --color-primary-30: #FCE1CB;
-  --color-primary-20:  #FDEADB;
-  --color-primary-10:  #FEF4EE;
-  --color-primary-5:   #FFF9F6;
+  /* --color-primary: #F4A261; */
+  --color-primary: #F79C42;
+
 
   --color-dark:  #631e0b;
 

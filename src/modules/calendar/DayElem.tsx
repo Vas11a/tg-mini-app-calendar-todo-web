@@ -6,32 +6,27 @@ interface Props {
   tasksCount?: number;
 }
 
-const TestCalendarElem = ({
-  dayDate,
-  isWeekend,
-  isToday,
-  isNotCurrentMonth,
-}: Props) => {
+const DayElem = ({ dayDate, isWeekend, isToday, isNotCurrentMonth }: Props) => {
   const getClassName = (): {
     containerClassName: string;
     taskClassName: string;
   } => {
     let defaultContainerClassName =
       "w-9 min-w-9 h-11 rounded-md flex flex-col items-center text-dark";
-    let containerBgColor = "bg-primary-20";
+    let containerBgColor = "bg-primary/20";
     let defaultTaskClassName = "w-[5px] h-[5px] rounded-full";
-    let taskBgColor = "bg-primary-80/50";
+    let taskBgColor = "bg-primary/40";
 
     if (isWeekend) {
-      containerBgColor = " bg-primary-40!";
-      taskBgColor = " bg-primary-80/80!";
+      containerBgColor = " bg-primary/40!";
+      taskBgColor = " bg-primary/60!";
     }
     if (isNotCurrentMonth) {
       defaultContainerClassName += " opacity-30!";
     }
     if (isToday) {
       defaultContainerClassName +=
-        " font-semibold outline-2 outline-primary-80";
+        " font-semibold outline-2 outline-primary/80";
     }
     return {
       containerClassName: defaultContainerClassName + " " + containerBgColor,
@@ -51,4 +46,4 @@ const TestCalendarElem = ({
   );
 };
 
-export default TestCalendarElem;
+export default DayElem;
